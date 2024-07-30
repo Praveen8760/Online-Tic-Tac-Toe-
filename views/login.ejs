@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-black px-sm">
+
+
+    <main class="grid grid-cols-12 lg:min-h-screen">
+        <section class="col-span-12 mt-8 flex justify-center items-center lg:col-span-6">
+            <img src="/img/xo.png" class="w-64 lg:w-96">
+        </section>
+
+        <section class="col-span-12 mt-5 flex flex-col justify-center lg:mt-8 lg:col-span-6 lg:px-sm">
+            <p class="text-white text-mobile-title leading-normal font-roboto font-bold lg:text-lg-title lg:leading-none">Login</p>
+            <p class="text-white text-mobile-title leading-none font-roboto font-bold lg:text-lg-title">Account</p>
+            <form action="/login" method="post" class="flex flex-col" id="login">
+            
+                <div class="relative z-0 mt-6 lg:mt-10">
+                    <input name="username" type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-white dark:focus:border-asset-blue focus:outline-none focus:ring-0 focus:border-asset-blue peer" placeholder=" " />
+                    <label for="floating_standard" class="absolute text-sm text-white dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-asset-blue peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Username</label>
+                </div>
+
+                <div class="relative z-0 mt-6 lg:mt-10">
+                    <input name="password" type="text" id="floating_standard" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-white appearance-none dark:text-white dark:border-white dark:focus:border-asset-blue focus:outline-none focus:ring-0 focus:border-asset-blue peer" placeholder=" " />
+                    <label for="floating_standard" class="absolute text-sm text-white dark:text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-asset-blue peer-focus:dark:text-asset-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Password</label>
+                </div>
+
+                <button type="submit" class="mt-6 self-center bg-asset-blue rounded-mobile text-mobile-form text-white px-8 py-3 lg:text-lg lg:mt-10">Login</button>
+
+                <p class="text-white self-center mt-6 lg:text-font-lg lg:mt-10">Don't have account.. ?<a href="">Register</a></p>
+
+                <!-- g login -->
+                <!-- <button type="submit" class="mt-6 self-center bg-asset-blue rounded-mobile text-mobile-form text-white px-8 py-3 lg:text-lg">Register</button> -->
+            </form>
+        </section>
+    </main>
+
+
+<script src="/assets/js/register.js"></script>
+</body>
+</html>
